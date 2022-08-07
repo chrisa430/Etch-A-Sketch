@@ -10,3 +10,10 @@ for (let i = 0; i < 256; i++) {
     grid.appendChild(div); 
 }
 };
+
+
+function removeAllChildNodes(parent){
+    while(parent.firstChild){
+        parent.removeChild(parent.firstChild);
+    }
+}
